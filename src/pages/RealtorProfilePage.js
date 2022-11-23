@@ -2,6 +2,8 @@ import "../styles/realtor.css";
 import React, {useState, useEffect} from 'react';
 import { ReviewList } from "../components/ReviewList";
 import { ReviewForm } from "../components/ReviewForm";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faStar} from "@fortawesome/free-solid-svg-icons";
 
 
 export default function RealtorProfilePage() {
@@ -28,10 +30,16 @@ export default function RealtorProfilePage() {
                             <h4>Phone: 30303030</h4>
                         </div>
                     </div>
-                    <div class="reviewBox">
-                        <div> stars</div>
+                    <div className="reviewBox">
+                        <div className="starFlexBox">
+                            <FontAwesomeIcon icon={faStar} className="yellowStarBig"/>
+                            <FontAwesomeIcon icon={faStar} className="yellowStarBig"/>
+                            <FontAwesomeIcon icon={faStar} className="yellowStarBig"/>
+                            <FontAwesomeIcon icon={faStar} className="yellowStarBig"/>
+                            <FontAwesomeIcon icon={faStar} className="blackStarBig"/>
+                        </div>
                         <ReviewList reviews={reviews} />
-                        <div class="reviewSeeMoreBtn">
+                        <div className="reviewSeeMoreBtn">
                             <button>See more reviews</button>
                         </div>
                         <ReviewForm addReview={addReview}/>
