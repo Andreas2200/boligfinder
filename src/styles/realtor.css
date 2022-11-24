@@ -20,7 +20,8 @@
     grid-template-areas:
     "img info info"
     "reviewBox listings listings"
-    "reviewBox listings listings";
+    "reviewBox listings listings"
+    ". listings listings";
 }
 .reviewBox{
     margin: 10px;
@@ -33,7 +34,6 @@
 .listings {
     margin: 10px;
     grid-area: listings;
-    background-color: yellow;
 }
 .info {
     margin: 10px;

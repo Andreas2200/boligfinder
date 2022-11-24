@@ -1,0 +1,27 @@
+
+.apartmentCard {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background-color: #DDD;
+    margin: 20px;
+    border: 2px solid #1D7D81;
+    border-radius: 15px;
+    height: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.apartmentCard img {
+    height: inherit;
+    width: 200px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.apartmentCard div {
+    margin-left: 20px;
+}
+
+.apartmentCard div .starFlexBox {
+    text-align: right;
+    justify-content: right;
+}
