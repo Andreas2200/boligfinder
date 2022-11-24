@@ -42,3 +42,13 @@ section{
     height: auto;
 
 }
+
+.filter-box{
+    margin: 25px;
+    background-color: white;
+    flex-direction: column;
+}
+
+.filter-checkbox{
+    justify-content: space-between;
+}
