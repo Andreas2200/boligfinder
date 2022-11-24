@@ -46,11 +46,10 @@ export default function RealtorProfilePage() {
                         <ReviewForm addReview={addReview}/>
                     </div>
                     <div class="listings">
-                        <ApartmentListing/>
-                        <ApartmentListing/>
-                        <ApartmentListing/>
-                        <ApartmentListing/>
-                        <ApartmentListing/>
+                        <ApartmentListing title={"2 værelses lejlighed"} imagepath={"resources/dormroom.JPG"} city={"Odense M"}/>
+                        <ApartmentListing title={"4 værelses lejlighed"} imagepath={"resources/studioapartment.JPeG"} city={"Ringkøbing"}/>
+                        <ApartmentListing title={"4 værelses lejlighed"} imagepath={"resources/studioapartment.JPeG"} city={"Nordby"}/>
+                        <ApartmentListing title={"2 værelses lejlighed"} imagepath={"resources/dormroom.JPG"} city={"Amager"}/>
                     </div>
                 </div>
             </section>
