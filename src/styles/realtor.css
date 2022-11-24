@@ -1,0 +1,67 @@
+.contentPage {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.realtorProfileImg {
+    justify-self: center;
+    margin: 10px;
+    grid-area: "img";
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 4px solid #1D7D81;
+}
+
+.grid {
+    margin-top: 30px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "img info info"
+    "reviewBox listings listings"
+    "reviewBox listings listings";
+}
+.reviewBox{
+    margin: 10px;
+    grid-area: reviewBox;
+    align-content: center;
+    justify-content: center;
+    border: 2px solid #1D7D81;
+    background-color: #DDD;
+}
+.listings {
+    margin: 10px;
+    grid-area: listings;
+    background-color: yellow;
+}
+.info {
+    margin: 10px;
+    grid-area: info;
+}
+.reviewSeeMoreBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.reviewSeeMoreBtn button {
+    height: 40px;
+    background-color: blue;
+    color: white;
+    border: 1px solid blue;
+}
+.starFlexBox {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.starFlexBox .yellowStarBig {
+    color: yellow;
+    font-size: 40px;
+}
+.starFlexBox .blackStarBig {
+    color: black;
+    font-size: 40px;
+}
