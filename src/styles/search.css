@@ -1,0 +1,44 @@
+section{
+    flex-direction: column;
+    margin: 20px;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid{
+    display: grid;
+}
+
+.search-bar{
+
+}
+
+.content-wrapper{
+    grid-template-columns: 1fr 2fr;
+}
+
+.sidebar{
+    background-color: gray;
+}
+
+.search-label{
+    padding-right: 10px;
+}
+
+.search-results{
+    margin: 25px;
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 25px;
+    column-gap: 25px;
+}
+
+.image{
+    max-width: 100%;
+    height: auto;
+
+}
