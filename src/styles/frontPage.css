@@ -1,0 +1,19 @@
+.frontPage {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.grid {
+    margin-top: 30px;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "title"
+    "shortcuts"
+    "listings";
+}
+
+.listings {
+    margin: 10px;
+    grid-area: listings;
+}
