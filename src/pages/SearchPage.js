@@ -10,56 +10,50 @@ export default function SearchPage() {
     return (
         <>
             <section className='flex'>
-                <div className='search-bar'>
-                    <label className='search-label' htmlFor='searchBar'>Search</label>
-                    <input type="text" name='searchBar' id='searchBar' placeholder='Where do you want to live'></input>
-                </div>
+                
                 <div className='content-wrapper'>
 
                     <div className='sidebar'>
 
-                        <div className='flex filter-box'>
-                            <h1>Boligtype</h1>
+                    <div className='flex filter-box'>
+                            <h1>Housing type</h1>
                             <div className='flex filter-checkbox'>
-                                <label htmlFor='lejligheder'>Lejligheder</label>
-                                <input type="checkbox" name="lejligheder" id="lejligheder" />
+                                <label htmlFor='lejligheder'>Apartments</label>
+                                <input type="checkbox" name="lejligheder" id="apartments" />
                             </div>
-
                             <div className='flex filter-checkbox'>
-                                <label htmlFor='lejligheder'>Værelser</label>
-                                <input type="checkbox" name="værelser" id="værelser" />
+                                <label htmlFor='lejligheder'>Rooms</label>
+                                <input type="checkbox" name="værelser" id="rooms" />
                             </div>
-
                             <div className='flex filter-checkbox'>
-                                <label htmlFor='lejligheder'>Huse</label>
-                                <input type="checkbox" name="huse" id="huse" />
+                                <label htmlFor='lejligheder'>Houses</label>
+                                <input type="checkbox" name="huse" id="houses" />
                             </div>
-
                             <div className='flex filter-checkbox'>
-                                <label htmlFor='lejligheder'>Rækkehuse</label>
-                                <input type="checkbox" name="rækkehuse" id="rækkehuse" />
+                                <label htmlFor='lejligheder'>Dorm rooms</label>
+                                <input type="checkbox" name="rækkehuse" id="dorms" />
                             </div>
                         </div>
 
 
                         <div className='flex filter-box'>
                             {/* <div className='rent-input'> */}
-                            <label htmlFor='rent'>Rent</label>
-                            <input type="number" name="rent" id="rent" />
+                            <label htmlFor='rent'>Maximum Rent</label>
+                            <input type="number" name="rent" id="rent" placeholder='price in DKK'/>
                             {/* </div> */}
                         </div>
 
                         <div className='flex filter-box'>
                             {/* <div className='size-input'> */}
-                            <label htmlFor='rent'>Size</label>
-                            <input type="number" name="size" id="size" />
+                            <label htmlFor='rent'>Minimum Size</label>
+                            <input type="number" name="size" id="size" placeholder='in m2'/>
                             {/* </div> */}
                         </div>
 
                         <div className='flex filter-box'>
                             {/* <div className='rooms-input'> */}
                             <label htmlFor='rooms'>Minimum Rooms</label>
-                            <input type="number" name="rooms" id="rooms" />
+                            <input type="number" name="rooms" id="rooms" placeholder='# of rooms'/>
                             {/* </div> */}
                         </div>
 
@@ -67,20 +61,20 @@ export default function SearchPage() {
                         <div className='flex filter-box'>
                             <h1>Rent period</h1>
                             <div className='flex filter-checkbox'>
-                                <label htmlFor='lejligheder'>Lejligheder</label>
-                                <input type="checkbox" name="lejligheder" id="lejligheder" />
+                                <label htmlFor='lejligheder'>Less than a year</label>
+                                <input type="checkbox" name="lejligheder" id="lessYear" />
                             </div>
                             <div className='flex filter-checkbox'>
-                                <label htmlFor='lejligheder'>Værelser</label>
-                                <input type="checkbox" name="værelser" id="værelser" />
+                                <label htmlFor='lejligheder'>1 year - 2 years</label>
+                                <input type="checkbox" name="værelser" id="twoYears" />
                             </div>
                             <div className='flex filter-checkbox'>
-                                <label htmlFor='lejligheder'>Huse</label>
-                                <input type="checkbox" name="huse" id="huse" />
+                                <label htmlFor='lejligheder'>2 years - 4 years</label>
+                                <input type="checkbox" name="huse" id="fourYears" />
                             </div>
                             <div className='flex filter-checkbox'>
-                                <label htmlFor='lejligheder'>Rækkehuse</label>
-                                <input type="checkbox" name="rækkehuse" id="rækkehuse" />
+                                <label htmlFor='lejligheder'>More than 5 years</label>
+                                <input type="checkbox" name="rækkehuse" id="moreYears" />
                             </div>
                         </div>
 
@@ -98,48 +92,53 @@ export default function SearchPage() {
 
                             <div className='flex filter-checkbox'>
                                 <div>
-                                    <label htmlFor='lejligheder'>Animals</label>
                                     <FontAwesomeIcon icon={faDog} className="yellowStarBig"/>
+                                    <label>Animals</label>
+                                    
                                 </div>
                                 <input type="checkbox" name="animals" id="animals" />
                             </div>
 
                             <div className='flex filter-checkbox'>
                                 <div>
-                                    <label htmlFor='lejligheder'>Bath</label>
                                     <FontAwesomeIcon icon={faBath} className="yellowStarBig"/>
+                                    <label>Bath</label>
+                                    
                                 </div>
                                 <input type="checkbox" name="bath" id="bath" />
                             </div>
 
                             <div className='flex filter-checkbox'>
                                 <div>
-                                    <label htmlFor='lejligheder'>Parking</label>
                                     <FontAwesomeIcon icon={faParking} className="yellowStarBig"/>
+                                    <label>Parking</label>
+                                    
                                 </div>
                                 <input type="checkbox" name="parking" id="parking" />
                             </div>
 
                             <div className='flex filter-checkbox'>
                                 <div>
-                                    <label htmlFor='lejligheder'>Kitchen</label>
-                                    <FontAwesomeIcon icon={faKitchenSet} />
+                                    <FontAwesomeIcon icon={faKitchenSet}  className="yellowStarBig"/>
+                                    <label>Kitchen</label>
                                 </div>
                                 <input type="checkbox" name="kitchen" id="kitchen" />
                             </div>
 
                             <div className='flex filter-checkbox'>
                                 <div>
-                                    <label htmlFor='lejligheder'>Student</label>
-                                    <FontAwesomeIcon icon={faGraduationCap} />
+                                    <FontAwesomeIcon icon={faGraduationCap}  className="yellowStarBig"/>
+                                    <label>Student</label>
+                                    
                                 </div>
                                 <input type="checkbox" name="student" id="student" />
                             </div>
 
                             <div className='flex filter-checkbox'>
                                 <div>
-                                    <label htmlFor='lejligheder'>Elevator</label>
-                                    <FontAwesomeIcon icon={faElevator} />
+                                    <FontAwesomeIcon icon={faElevator}  className="yellowStarBig"/>
+                                    <label>Elevator</label>
+
                                 </div>
                                 <input type="checkbox" name="elevator" id="elevator" />
                             </div>
@@ -148,6 +147,11 @@ export default function SearchPage() {
 
                     </div>
                     <div className='search-results'>
+                        <h1 className="center">BoligFinder search</h1>
+                        <div className='search-bar'>
+                            <input type="text" className='searchBar' id='searchBar' placeholder='Where do you want to live'></input>
+                            <button>Search</button>
+                        </div>
                         <ApartmentListing title={"2 værelses lejlighed"} imagepath={"resources/dormroom.JPG"} city={"Odense M"} />
                         <ApartmentListing title={"4 værelses lejlighed"} imagepath={"resources/studioapartment.JPeG"} city={"Ringkøbing"} />
                         <ApartmentListing title={"4 værelses lejlighed"} imagepath={"resources/studioapartment.JPeG"} city={"Nordby"} />
