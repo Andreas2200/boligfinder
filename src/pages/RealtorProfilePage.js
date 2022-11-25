@@ -2,6 +2,7 @@ import "../styles/realtor.css";
 import React, {useState, useEffect} from 'react';
 import { ReviewList } from "../components/ReviewList";
 import { ReviewForm } from "../components/ReviewForm";
+import { ApartmentListing } from "../components/ApartmentListing";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faStar} from "@fortawesome/free-solid-svg-icons";
 
@@ -45,7 +46,10 @@ export default function RealtorProfilePage() {
                         <ReviewForm addReview={addReview}/>
                     </div>
                     <div class="listings">
-                        <p>listings</p>
+                        <ApartmentListing title={"2 værelses lejlighed"} imagepath={"resources/dormroom.JPG"} city={"Odense M"}/>
+                        <ApartmentListing title={"4 værelses lejlighed"} imagepath={"resources/studioapartment.JPeG"} city={"Ringkøbing"}/>
+                        <ApartmentListing title={"4 værelses lejlighed"} imagepath={"resources/studioapartment.JPeG"} city={"Nordby"}/>
+                        <ApartmentListing title={"2 værelses lejlighed"} imagepath={"resources/dormroom.JPG"} city={"Amager"}/>
                     </div>
                 </div>
             </section>
