@@ -1,6 +1,7 @@
 import "../styles/frontPage.css";
 import React, { useEffect, useState } from 'react';
 import { ApartmentListing } from "../components/ApartmentListing";
+import { Link } from 'react-router-dom';
 
 
 
@@ -40,22 +41,24 @@ function FrontPage() {
                                 onChange={handleChange}
                             //ref={inputRef}
                             />
-                            <button className="front-search-button"> Search</button>
+                            <Link to="/search">
+                                <button className="front-search-button"> Search</button>
+                            </Link>
                         </form>
                     </div>
                     <div className="shortcuts">
                         <div className="shortcut1">
-                            <a target="_blank" href="/apartment">
+                            <a target="_blank" href="/search">
                                 <img src="resources/OdenseISE.jpg" class="shortcutImage"></img>
                             </a>
                         </div>
                         <div className="shortcut2">
-                            <a target="_blank" href="/apartment">
+                            <a target="_blank" href="/search">
                                 <img src="resources/aarhusISE.jpeg" class="shortcutImage"></img>
                             </a>
                         </div>
                         <div className="shortcut3">
-                            <a target="_blank" href="/apartment">
+                            <a target="_blank" href="/search">
                                 <img src="resources/københavnISE.jpg" class="shortcutImage"></img>
                             </a>
                         </div>
