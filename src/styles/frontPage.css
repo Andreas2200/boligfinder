@@ -3,17 +3,58 @@
     max-width: 1200px;
 }
 
-.grid {
-    margin-top: 30px;
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "title"
-    "shortcuts"
-    "listings";
+.frontpageTitle {
+    text-align: center;
+    font-size: 40px;
+}
+
+.frontsearchBar {
+    text-align: center;
+}
+
+.search-input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid #000;
+    outline: none;
+    width: 320px;
+    color: #000;
+}
+
+.front-search-button {
+    padding: 14px;
+    border: 2px solid #000;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    background-color: teal;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.shortcuts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    margin-top: 20px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.shortcutImage {
+    max-width: 300px;
+    max-height: 300px;
 }
 
 .listings {
-    margin: 10px;
     grid-area: listings;
+    max-width: 900px;
+    justify-content: center;
+    margin: 0 auto !important;
+}
+
+.apartmentCard {
+    justify-self: center;
+    margin: 0 auto;
+    align-self: center;
 }

@@ -1,4 +1,4 @@
-
+import "../styles/frontPage.css";
 import React, { useEffect, useState } from 'react';
 import { ApartmentListing } from "../components/ApartmentListing";
 
@@ -25,12 +25,12 @@ function FrontPage() {
     return (
         <>
             <section class="frontPage">
-                <div class="grid">
-                    <div class="title">
+                <div class="frontpageGrid">
+                    <div class="frontpageTitle">
                         <h1>BoligFinder</h1>
                     </div>
-                    <div class="searchBar">
-                        <form className="" onSubmit={handleSearch}>
+                    <div class="frontsearchBar">
+                        <form className="frontpageBar" onSubmit={handleSearch}>
                             <input
                                 type="text"
                                 placeholder="Where do you want to live?"
@@ -40,18 +40,24 @@ function FrontPage() {
                                 onChange={handleChange}
                             //ref={inputRef}
                             />
-                            <button Name="search-button"> Search</button>
+                            <button className="front-search-button"> Search</button>
                         </form>
                     </div>
                     <div className="shortcuts">
                         <div className="shortcut1">
-                            <h1>Odense shortcut</h1>
+                            <a target="_blank" href="/apartment">
+                                <img src="resources/OdenseISE.jpg" class="shortcutImage"></img>
+                            </a>
                         </div>
                         <div className="shortcut2">
-                            <h1>Aarhus shortcut</h1>
+                            <a target="_blank" href="/apartment">
+                                <img src="resources/aarhusISE.jpeg" class="shortcutImage"></img>
+                            </a>
                         </div>
                         <div className="shortcut3">
-                            <h1>København shortcut</h1>
+                            <a target="_blank" href="/apartment">
+                                <img src="resources/københavnISE.jpg" class="shortcutImage"></img>
+                            </a>
                         </div>
                     </div>
                     <div class="listings">
