@@ -11,7 +11,7 @@ export default function RealtorProfilePage() {
 
     const STORAGE_KEY = "unique";
 
-    const [reviews, setReviews] = useState([{id: 1, name: "sofie", stars: 4, text: "This man is a very nice realtor, I would recommend"},{id: 1, name: "Martin", stars: 3, text: "Not very cool guy :(("}])
+    const [reviews, setReviews] = useState([{id: 1, name: "sofie", stars: 4, text: "This man is a very nice realtor, I would recommend"},{id: 1, name: "Louise", stars: 3, text: "Not very cool guy :(("}])
 
     function addReview(review) {
         setReviews([review, ...reviews]);
@@ -21,7 +21,7 @@ export default function RealtorProfilePage() {
         <>
             <section class="contentPage">
                 <div class="grid">
-                    <img src="resources/sofprofilepic.JPG" alt="logo" class="realtorProfileImg"></img>
+                    <img src="resources/jens.jpg" alt="logo" class="realtorProfileImg"></img>
                     <div class="info">
                         <h1>Jens Jensen</h1>
                         <h3>Hovedgaden 13, 6720 Fanø</h3>
@@ -46,10 +46,10 @@ export default function RealtorProfilePage() {
                         <ReviewForm addReview={addReview}/>
                     </div>
                     <div class="listings">
-                        <ApartmentListing title={"2 værelses lejlighed"} imagepath={"resources/dormroom.JPG"} city={"Odense M"}/>
-                        <ApartmentListing title={"4 værelses lejlighed"} imagepath={"resources/studioapartment.JPeG"} city={"Ringkøbing"}/>
-                        <ApartmentListing title={"4 værelses lejlighed"} imagepath={"resources/studioapartment.JPeG"} city={"Nordby"}/>
-                        <ApartmentListing title={"2 værelses lejlighed"} imagepath={"resources/dormroom.JPG"} city={"Amager"}/>
+                        <ApartmentListing title={"2 værelses lejlighed"} imagepath={"resources/dormroom.jpg"} city={"Odense M"}/>
+                        <ApartmentListing title={"4 værelses lejlighed"} imagepath={"resources/studioapartment.jpeg"} city={"Ringkøbing"}/>
+                        <ApartmentListing title={"4 værelses lejlighed"} imagepath={"resources/studioapartment.jpeg"} city={"Nordby"}/>
+                        <ApartmentListing title={"2 værelses lejlighed"} imagepath={"resources/dormroom.jpg"} city={"Amager"}/>
                     </div>
                 </div>
             </section>

@@ -25,3 +25,8 @@
     text-align: right;
     justify-content: right;
 }
+
+.link, .link:hover, .link:focus, .link:active {
+    text-decoration: none !important;
+    color: inherit;
+}

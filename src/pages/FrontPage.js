@@ -48,24 +48,24 @@ function FrontPage() {
                     </div>
                     <div className="shortcuts">
                         <div className="shortcut1">
-                            <a target="_blank" href="/search">
+                            <Link to="/search">
                                 <img src="resources/OdenseISE.jpg" class="shortcutImage"></img>
-                            </a>
+                            </Link>
                         </div>
                         <div className="shortcut2">
-                            <a target="_blank" href="/search">
+                            <Link to="/search">
                                 <img src="resources/aarhusISE.jpeg" class="shortcutImage"></img>
-                            </a>
+                            </Link>
                         </div>
                         <div className="shortcut3">
-                            <a target="_blank" href="/search">
+                            <Link to="/search">
                                 <img src="resources/københavnISE.jpg" class="shortcutImage"></img>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div class="listings">
-                        <ApartmentListing title={"2 værelses lejlighed"} imagepath={"resources/dormroom.JPG"} city={"Odense M"} />
-                        <ApartmentListing title={"4 værelses lejlighed"} imagepath={"resources/studioapartment.JPeG"} city={"Ringkøbing"} />
+                        <ApartmentListing title={"2 værelses lejlighed"} imagepath={"resources/dormroom.jpg"} city={"Odense M"} />
+                        <ApartmentListing title={"4 værelses lejlighed"} imagepath={"resources/studioapartment.jpeg"} city={"Ringkøbing"} />
                     </div>
                 </div>
             </section>

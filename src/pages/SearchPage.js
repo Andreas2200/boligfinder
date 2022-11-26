@@ -152,10 +152,10 @@ export default function SearchPage() {
                             <input type="text" className='searchBar' id='searchBar' placeholder='Where do you want to live'></input>
                             <button>Search</button>
                         </div>
-                        <ApartmentListing title={"2 værelses lejlighed"} imagepath={"resources/dormroom.JPG"} city={"Odense M"} />
-                        <ApartmentListing title={"4 værelses lejlighed"} imagepath={"resources/studioapartment.JPeG"} city={"Ringkøbing"} />
-                        <ApartmentListing title={"4 værelses lejlighed"} imagepath={"resources/studioapartment.JPeG"} city={"Nordby"} />
-                        <ApartmentListing title={"2 værelses lejlighed"} imagepath={"resources/dormroom.JPG"} city={"Amager"} />
+                        <ApartmentListing title={"2 værelses lejlighed"} imagepath={"resources/dormroom.jpg"} city={"Odense M"} />
+                        <ApartmentListing title={"4 værelses lejlighed"} imagepath={"resources/studioapartment.jpeg"} city={"Ringkøbing"} />
+                        <ApartmentListing title={"4 værelses lejlighed"} imagepath={"resources/studioapartment.jpeg"} city={"Nordby"} />
+                        <ApartmentListing title={"2 værelses lejlighed"} imagepath={"resources/dormroom.jpg"} city={"Amager"} />
 
                         <div className='page-selector'>
                         <button className='prev-next'>
