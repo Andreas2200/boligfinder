@@ -10,11 +10,11 @@ export function ApartmentListing(props) {
 
     return(
         <Link to="/apartment" class="link"  style={{textDecoration: 'none !important'}}>
-            <div className="apartmentCard">
+            <div className="apartmentCard" id={props.id}>
                 <img src={props.imagepath} alt="apartment"></img>
                 <div>
                     <h1>{props.title}</h1>
-                    <h4>{props.city}</h4>
+                    <h4 className="city">{props.city}</h4>
                     <div className="starFlexBox">
                         <FontAwesomeIcon icon={faStar} className="yellowStarBig"/>
                         <FontAwesomeIcon icon={faStar} className="yellowStarBig"/>

@@ -64,8 +64,8 @@ function FrontPage() {
                         </div>
                     </div>
                     <div class="listings">
-                        <ApartmentListing title={"2 værelses lejlighed"} imagepath={"resources/dormroom.jpg"} city={"Odense M"} />
-                        <ApartmentListing title={"4 værelses lejlighed"} imagepath={"resources/studioapartment.jpeg"} city={"Ringkøbing"} />
+                        <ApartmentListing title={"2 værelses lejlighed"} id="listing1" imagepath={"resources/dormroom.jpg"} city={"Odense M"} />
+                        <ApartmentListing title={"4 værelses lejlighed"} id="listing2" imagepath={"resources/studioapartment.jpeg"} city={"Ringkøbing"} />
                     </div>
                 </div>
             </section>
