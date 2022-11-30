@@ -43,7 +43,7 @@ export function ReviewForm({ addReview }) {
     return(
         <form className="reviewForm" onSubmit={handleSubmit}>
             <label>Give stars</label>
-            <select value={selected} onChange={handleStars} className="textField">
+            <select value={selected} onChange={handleStars} className="textField" id="starInput">
                 {options.map(option => (
                 <option key={option.value} value={option.value}>
                     {option.text}
@@ -51,8 +51,8 @@ export function ReviewForm({ addReview }) {
                 ))}
             </select>
             <label>Give review</label>
-            <input type="text" placeholder="Add review..." className="textField" onChange={handleText} value={review.text}/>
-            <button type="submit" className="add-btn">Add</button>
+            <input id="reviewText" type="text" placeholder="Add review..." className="textField" onChange={handleText} value={review.text}/>
+            <button type="submit" className="add-btn" id="reviewSubmit">Add</button>
         </form>
     )
 }
