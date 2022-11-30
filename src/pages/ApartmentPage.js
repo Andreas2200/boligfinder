@@ -95,7 +95,7 @@ export default function ApartmentPage() {
               <FontAwesomeIcon icon={faStar} className="yellowStarBig" />
               <FontAwesomeIcon icon={faStar} className="blackStarBig" />
             </div>
-            <h2>
+            <h2 id="realtorContact" >
               <a href="/realtor">Jens Jensen</a>
             </h2>
             <p>
