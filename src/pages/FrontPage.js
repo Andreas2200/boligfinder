@@ -28,7 +28,9 @@ function FrontPage() {
             <section class="frontPage">
                 <div class="frontpageGrid">
                     <div class="frontpageTitle">
+                        <a href="https://youtu.be/6o7I73spdUY?t=17" style={{textDecoration: 'none', color:'black'}}>
                         <h1>BoligFinder</h1>
+                        </a>
                     </div>
                     <div class="frontsearchBar">
                         <form className="frontpageBar" onSubmit={handleSearch}>
